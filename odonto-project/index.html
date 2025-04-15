@@ -1,121 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Atendimento odontológico humanizado com a Dra. Marcella Pavarine. Agende uma consulta e cuide do seu sorriso com quem entende." />
   <title>Dra. Marcella Pavarine | Cirurgiã-Dentista</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      scroll-behavior: smooth;
-    }
-
-    .hero-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .hero-text {
-      flex: 1 1 50%;
-      text-align: center;
-    }
-
-    .hero-text h2 {
-      font-size: 1.8rem;
-      color: #333;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-
-    .hero-text .sub {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    .btn-cta {
-      display: inline-block;
-      background-color: #d4af37;
-      color: white;
-      padding: 0.9rem 1.8rem;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .btn-cta:hover {
-      background-color: #bfa229;
-      transform: translateY(-2px);
-    }
-
-    .hero-img {
-      flex: 1 1 40%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-img img {
-      max-width: 280px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    section {
-      padding: 4rem 1rem;
-    }
-
-    .sobre-text {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #444;
-    }
-
-    .sobre-text h3 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #bfa229;
-    }
-
-    @media (max-width: 768px) {
-      .hero-container {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-      }
-
-      .hero-text {
-        flex: 1 1 100%;
-      }
-
-      .hero-img {
-        flex: 1 1 100%;
-        margin-bottom: 1rem;
-      }
-
-      .btn-cta {
-        margin-top: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/estilos-custom.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+  <script src="assets/js/form-handler.js"></script>
+
   <header class="header">
     <div class="container">
       <h1 class="logo">
-        Dra. Marcella Pavarine<br>
-        <span style="font-size: 1.3rem;">CRO-MG 75222</span>
-      </h1>      
+        Dra. Marcella Pavarine<br />
+        <span style="font-size: 1.3rem">CRO-MG 75222</span>
+      </h1>
       <nav class="nav">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -129,13 +40,20 @@
   <section class="hero hero-custom">
     <div class="container hero-container">
       <div class="hero-text">
-        <img src="assets/img/logo-mp.svg" alt="Logo MP" class="logo-marca">
-        <h2>Cuidando do seu sorriso e bem-estar com dedicação e excelência</h2>
-        <p class="sub">Agende seu atendimento com a Dra. Marcella e receba um atendimento individualizado, humanizado e de excelência. Realização de tratamento de canal, extrações, clareamento dental e limpeza.</p>        
-        <a href="https://api.whatsapp.com/send?phone=5534998968279" class="btn-cta" aria-label="Agende via WhatsApp" target="_blank">Agende já pelo WhatsApp!</a>
+        <img src="assets/img/logo/logo-mp.svg" alt="Logo MP" class="logo-marca" />
+        <h2>
+          Cuidando do seu sorriso e bem-estar com dedicação e excelência
+        </h2>
+        <p class="sub">
+          Agende seu atendimento com a Dra. Marcella e receba um atendimento
+          individualizado, humanizado e de excelência. Realização de
+          tratamento de canal, extrações, clareamento dental e limpeza.
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=5534998968279" class="btn-cta" aria-label="Agende via WhatsApp"
+          target="_blank">Agende já pelo WhatsApp!</a>
       </div>
       <div class="hero-img">
-        <img src="assets/img/dra-marcella.jpg" alt="Imagem da Dra. Marcella">
+        <img src="assets/img/dra-marcella.jpg" alt="Imagem da Dra. Marcella" />
       </div>
     </div>
   </section>
@@ -145,11 +63,21 @@
       <div class="sobre-text">
         <h3>Conheça a Dra. Marcella</h3>
         <p>
-          Olá, sou a Dra. Marcella, cirurgiã-dentista graduada pela Unitri - Centro Universitário do Triângulo, e sou apaixonada pela minha profissão.
-          Atuo como clínica geral, oferecendo um atendimento humanizado, sempre focada em ouvir cada paciente e proporcionar saúde bucal com conforto e confiança.
-          Acredito que o cuidado com o sorriso vai além da estética — ele está diretamente relacionado à autoestima, à saúde geral e ao bem-estar. Por isso, busco constantemente me atualizar, integrando conhecimentos técnicos a um olhar cuidadoso e acolhedor.
-          Além dos procedimentos odontológicos tradicionais, também realizo a aplicação de toxina botulínica (botox), tanto para fins terapêuticos — como no tratamento do bruxismo e do sorriso gengival — quanto estéticos, suavizando linhas de expressão e valorizando a harmonia facial.
-          Seja para cuidar da sua saúde bucal ou realçar sua beleza de forma sutil e natural, estou aqui para acompanhar você com dedicação em cada etapa.
+          Olá, sou a Dra. Marcella, cirurgiã-dentista graduada pela Unitri -
+          Centro Universitário do Triângulo, e sou apaixonada pela minha
+          profissão. Atuo como clínica geral, oferecendo um atendimento
+          humanizado, sempre focada em ouvir cada paciente e proporcionar
+          saúde bucal com conforto e confiança. Acredito que o cuidado com o
+          sorriso vai além da estética — ele está diretamente relacionado à
+          autoestima, à saúde geral e ao bem-estar. Por isso, busco
+          constantemente me atualizar, integrando conhecimentos técnicos a um
+          olhar cuidadoso e acolhedor. Além dos procedimentos odontológicos
+          tradicionais, também realizo a aplicação de toxina botulínica
+          (botox), tanto para fins terapêuticos — como no tratamento do
+          bruxismo e do sorriso gengival — quanto estéticos, suavizando linhas
+          de expressão e valorizando a harmonia facial. Seja para cuidar da
+          sua saúde bucal ou realçar sua beleza de forma sutil e natural,
+          estou aqui para acompanhar você com dedicação em cada etapa.
         </p>
       </div>
     </div>
@@ -161,45 +89,128 @@
       <div class="cards">
         <div class="card">
           <h4>Clínico Geral</h4>
-          <p>Procedimentos de limpeza e raspagem para prevenção de cáries, gengivite e manutenção da saúde bucal a longo prazo.</p>
+          <p>
+            Procedimentos de limpeza e raspagem para prevenção de cáries,
+            gengivite e manutenção da saúde bucal a longo prazo.
+          </p>
         </div>
         <div class="card">
           <h4>Estética Dental</h4>
-          <p>Restaurações estéticas e funcionais que devolvem a beleza e a integridade dos dentes comprometidos.</p>
+          <p>
+            Restaurações estéticas e funcionais que devolvem a beleza e a
+            integridade dos dentes comprometidos.
+          </p>
         </div>
         <div class="card">
           <h4>Clínico Geral</h4>
-          <p>Tratamento eficaz para aliviar a sensibilidade dentária, proporcionando mais conforto no dia a dia.</p>
+          <p>
+            Tratamento eficaz para aliviar a sensibilidade dentária,
+            proporcionando mais conforto no dia a dia.
+          </p>
         </div>
         <div class="card">
           <h4>Estética Dental</h4>
-          <p>Clareamento dental supervisionado para recuperar o brilho natural do sorriso com segurança e resultados visíveis.</p>
+          <p>
+            Clareamento dental supervisionado para recuperar o brilho natural
+            do sorriso com segurança e resultados visíveis.
+          </p>
         </div>
         <div class="card">
           <h4>Estética</h4>
-          <p>Aplicação de toxina botulínica para suavizar linhas de expressão, tratar sorriso gengival e auxiliar no controle do bruxismo.</p>
+          <p>
+            Aplicação de toxina botulínica para suavizar linhas de expressão,
+            tratar sorriso gengival e auxiliar no controle do bruxismo.
+          </p>
         </div>
         <div class="card">
           <h4>Cirurgias</h4>
-          <p>Extrações simples realizadas com técnica e cuidado, visando uma recuperação rápida e tranquila.</p>
+          <p>
+            Extrações simples realizadas com técnica e cuidado, visando uma
+            recuperação rápida e tranquila.
+          </p>
         </div>
         <div class="card">
           <h4>Clínico Geral</h4>
-          <p>Confeccionadas sob medida, as placas protetoras auxiliam no controle do bruxismo e protegem durante atividades esportivas.</p>
+          <p>
+            Confeccionadas sob medida, as placas protetoras auxiliam no
+            controle do bruxismo e protegem durante atividades esportivas.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Seção de Depoimentos -->
+  <section class="depoimentos" id="depoimentos" data-aos="fade-up">
+    <div class="container">
+      <h3>O que dizem os pacientes</h3>
+
+      <div class="depoimento">
+        <p>
+          “A Dra. Marcella me acolheu com tanta delicadeza que até esqueci o medo de dentista. Explicou cada passo do
+          tratamento e me deixou super tranquila. Profissional incrível!”
+        </p>
+        <strong>— Ana Cláudia M.</strong>
+      </div>
+
+      <div class="depoimento">
+        <p>
+          “Fui indicado por um amigo e me surpreendi. Atendimento pontual, consultório impecável e a Dra. Marcella
+          transmite muita segurança. Voltarei com certeza.”
+        </p>
+        <strong>— João Pedro S.</strong>
+      </div>
+
+      <div class="depoimento">
+        <p>
+          “Precisei fazer uma limpeza de urgência e fui atendida no mesmo dia. Além de super gentil, ela tem mãos leves.
+          Saí aliviada e sorrindo!”
+        </p>
+        <strong>— Juliana R.</strong>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Preview de Blog -->
+  <section class="blog-preview" data-aos="fade-up">
+    <div class="container">
+      <h3>Dicas de Saúde Bucal</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Como melhorar sua escovação</h4>
+          <p>Dicas simples para uma higiene bucal mais eficaz e duradoura.</p>
+        </div>
+        <div class="card">
+          <h4>Alimentos que fortalecem seus dentes</h4>
+          <p>
+            Descubra quais alimentos ajudam a manter seu sorriso saudável.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=5534998968279" class="floating-whatsapp" target="_blank"
+    aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Formulário com feedback, spinner e toast -->
   <section id="contato" class="contato">
     <div class="container">
       <h3>Agende sua Consulta</h3>
-      <form>
-        <input type="text" placeholder="Seu nome" required aria-label="Seu nome">
-        <input type="email" placeholder="Seu e-mail" required aria-label="Seu e-mail">
-        <textarea placeholder="Mensagem" required aria-label="Mensagem"></textarea>
-        <button type="submit">Enviar</button>
+      <form id="formulario" action="https://formspree.io/f/xrbpdvop" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required aria-label="Seu nome" />
+        <input type="email" name="email" placeholder="Seu e-mail" required aria-label="Seu e-mail" />
+        <textarea name="mensagem" placeholder="Mensagem" required aria-label="Mensagem"></textarea>
+        <button type="submit">
+          <span class="btn-text">Enviar</span>
+          <span class="spinner" style="display: none"></span>
+        </button>
       </form>
+      <div id="toast" class="toast"></div>
     </div>
   </section>
 
@@ -207,14 +218,15 @@
     <div class="container">
       <p>© 2025 Dra. Marcella Pavarine. Todos os direitos reservados.</p>
       <div class="social">
-        <a href="https://www.instagram.com/marcellapavarine?igsh=MTVoN2llMHZrMzQycw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
-          <img src="assets/img/icones/instagram.svg" alt="Instagram">
+        <a href="https://www.instagram.com/marcellapavarine" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="https://api.whatsapp.com/send?phone=5534998968279" target="_blank" aria-label="WhatsApp">
-          <img src="assets/img/icones/whatsapp.svg" alt="WhatsApp">
-        </a>              
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

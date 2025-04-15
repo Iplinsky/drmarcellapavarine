@@ -1,0 +1,233 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+/* Seção SERVIÇOS */
+.servicos {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.servicos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/background/bg-sorriso-servicos.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.38;
+    z-index: 0;
+}
+
+.servicos>.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Seção DEPOIMENTOS */
+.depoimentos {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.depoimentos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/background/bg-sorriso-depoimentos.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.38;
+    z-index: 0;
+}
+
+.depoimentos>.container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.btn-cta {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+}
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.floating-whatsapp i {
+    font-size: 24px;
+}
+
+.depoimentos,
+.blog-preview {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.depoimentos h3,
+.blog-preview h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #5a2a40;
+    margin-bottom: 2rem;
+}
+
+.depoimento {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-style: italic;
+    color: #444;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-text .sub {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #d4af37;
+    color: white;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+    background-color: #bfa229;
+    transform: translateY(-2px);
+}
+
+.hero-img {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    padding: 4rem 1rem;
+}
+
+.sobre-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.sobre-text h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #bfa229;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        flex: 1 1 100%;
+    }
+
+    .hero-img {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+
+    .btn-cta {
+        margin-top: 1rem;
+    }
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    display: block;
+    opacity: 1;
+}
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
