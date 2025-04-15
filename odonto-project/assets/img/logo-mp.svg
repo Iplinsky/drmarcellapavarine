@@ -1,0 +1,10 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#F4F4F4"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Playfair Display, serif"
+        font-size="120"
+        font-weight="700"
+        fill="#c9a348">
+    MP
+  </text>
+</svg>
